@@ -95,6 +95,9 @@ h2{
 	text-align: center;
 	padding: 8px;
 }
+.donations{
+	padding-bottom: 20px;
+}
 .back-game{
 	background-image: url(../img/mid-desing.png);
 	background-size: cover;
@@ -537,21 +540,132 @@ form.form_contact input[type="submit"]:hover{
 	font-size: 16px;
 	font-weight: 600;
 	cursor: pointer;
-}.btn-download{
+}
+.btn-paypal{
+	width: 120px;
+	margin: 10px;
 	transition: all 0.5s ease;
 	letter-spacing: 1px;
-	width: 180px;
-	background: #fff;
+	display: inline-flex;
+	justify-content: center;
+	background: #ecffe9;
 	border: 1px solid;
 	padding: 10px;
-	border-radius: 2px;
-	margin-top: 30px;
+	border-radius: 6px;
 	align-self: center;
 	color: #000;
 	font-family: system-ui;
 	font-size: 16px;
 	font-weight: 600;
 	cursor: pointer;
+}
+.btn-zinli{
+	width: 120px;
+	margin: 10px;
+	transition: all 0.5s ease;
+	letter-spacing: 1px;
+	display: inline-flex;
+	justify-content: center;
+	background: #ecffe9;
+	border: 1px solid;
+	padding: 10px;
+	border-radius: 6px;
+	align-self: center;
+	color: #000;
+	font-family: system-ui;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.btn-binance{
+	width: 120px;
+	margin: 10px;
+	transition: all 0.5s ease;
+	letter-spacing: 1px;
+	display: inline-flex;
+	justify-content: center;
+	background: #ecffe9;
+	border: 1px solid;
+	padding: 10px;
+	border-radius: 6px;
+	align-self: center;
+	color: #000;
+	font-family: system-ui;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.btn-bdv{
+	width: 120px;
+	margin: 10px;
+	transition: all 0.5s ease;
+	letter-spacing: 1px;
+	display: inline-flex;
+	justify-content: center;
+	background: #ecffe9;
+	border: 1px solid;
+	padding: 10px;
+	border-radius: 6px;
+	align-self: center;
+	color: #000;
+	font-family: system-ui;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.btn-back{
+	margin: 10px;
+	transition: all 0.5s ease;
+	letter-spacing: 1px;
+	display: inline-flex;
+	justify-content: center;
+	background: #fffff7;
+	border: 1px solid;
+	padding: 10px;
+	border-radius: 6px;
+	align-self: center;
+	color: #000;
+	font-family: system-ui;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.btn-download{
+	display: flex;
+	transition: all 0.5s ease;
+	letter-spacing: 1px;
+	background: #fff;
+	border: 1px solid;
+	padding: 10px;
+	border-radius: 2px;
+	align-self: center;
+	align-items: center;
+	color: #000;
+	font-family: system-ui;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	justify-content: center;
+}
+.btn-paypal:hover{
+	color: #4bbdff;
+	background: rgba(28, 58, 123, 0.7);
+}
+.btn-zinli:hover{
+	color: #40e9aa;
+	background: rgba(68, 47, 140, 0.7);
+}
+.btn-binance:hover{
+	color: #f4b43f;
+	background: rgba(25, 25, 32, 0.7);
+}
+.btn-bdv:hover{
+	color: #f43f3f;
+	background: rgba(25, 25, 32, 0.7);
+}
+.btn-back:hover{
+	color: #f43f3f;
+	background: rgba(25, 25, 32, 0.7);
 }
 .btn-download:hover{
 	color: #fff;
@@ -625,7 +739,7 @@ nav{
 	text-decoration: none;
 }
 .btn-curriculum{
-	margin: 35px;
+	margin: 30px;
 }
 .nav-links li a{
 	color: white;
@@ -841,7 +955,20 @@ section{
 	display:flex;
 	justify-content:left;
 }
-
+.donations{
+	display: grid;
+	 justify-content: space-around;
+	 padding: 30px;
+}
+.donations-section{
+	display: flex;
+	 justify-content: space-around;
+	 padding: 30px;
+}
+.donations-btn{
+	display: flex; 
+	justify-content: center;
+}
 #logoWPP{
 	padding-top: 0px; 
 	padding-right: 0px;
@@ -975,8 +1102,7 @@ section{
 	
 }
 .modalImg{
-	width:75%;
-	max-height:90vh;
+	width:80%;
 	max-width:1290px;
 	border-radius: 5px;
 	
@@ -1078,6 +1204,13 @@ section{
 	position: fixed;
 	z-index: 500;
 }
+.sub-contenedor{
+	display: grid;
+	justify-content: center;
+}
+.botones-descarga{
+	display: flex;
+}
 @media screen and (max-width: 1370px){
 	.h2{
 		width: 80%;
@@ -1097,6 +1230,32 @@ section{
 	}
 }
 @media screen and (max-width: 950px){
+	.donations{
+		display: grid;
+	}
+	.donations-section{
+		display: grid;
+	}
+	.donations-btn{
+		display: grid; 
+		justify-content: center;
+	}
+	.btn-paypal{
+		width: 180px;
+		
+	}
+	.btn-zinli{
+		width: 180px;
+		
+	}
+	.btn-binance{
+		width: 180px;
+		
+	}
+	.btn-bdv{
+		width: 180px;
+		
+	}
 	#preloader{
 		background-size: 35%;
 	}
@@ -1179,6 +1338,12 @@ iframe{
 
 @media screen and (max-width: 750px){
 
+	.botones-descarga{
+		display: block;
+	}
+	.sub-contenedor{
+		display: block;
+	}
 	.logo-nav-pc{
 		display: none;
 	}
